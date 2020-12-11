@@ -15,7 +15,7 @@ class Auth extends CI_Controller
 		$this->load->database();
 		$this->load->library(['ion_auth', 'form_validation']);
 		$this->load->helper(['url', 'language']);
-
+		
 		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
 		$this->lang->load('auth');
@@ -878,7 +878,7 @@ class Auth extends CI_Controller
 	 */
 	public function _render_page($view, $data = NULL, $returnhtml = FALSE)//I think this makes more sense
 	{
-
+		$this->load->view('layout/header');
 		$viewdata = (empty($data)) ? $this->data : $data;
 
 		$view_html = $this->load->view($view, $viewdata, $returnhtml);
