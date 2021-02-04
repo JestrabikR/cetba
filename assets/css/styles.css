@@ -1,0 +1,19 @@
+body {
+  background-color: #fff7f7;
+}
+.container h1 {
+  padding: 20px;
+}
+.table {
+  font-size: 18px;
+}
+.table th {
+  background-color: #343A40;
+  color: white;
+}
+#Formularaccordion .card #collapseOne {
+  background-color: #DAD4D4;
+}
+#Formularaccordion .card #collapseTwo {
+  background-color: #DAD4D4;
+}
